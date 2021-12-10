@@ -698,7 +698,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   footer .copy_w .inner .copy p {
     font-size: 0.875rem;
     color: #6e6e6e;
-    line-height: 27px;
+    line-height: 1.6;
   }
   footer .copy_w .inner .copy p span {
     color: #d2d2d2;
@@ -862,6 +862,9 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
 }
 
 @media screen and (max-width: 767px) {
+  .inner {
+    width: 100%;
+  }
   header {
     width: 100%;
     height: 100px;
@@ -1016,7 +1019,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   }
   footer .f_menu {
     width: 100%;
-    height: 4.5rem;
+    height: inherit;
     border-top: 1px solid #e5e5e5;
   }
   footer .f_menu .inner {
@@ -1024,20 +1027,16 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     padding: 0 5%;
   }
   footer .f_menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: block;
     height: 100%;
+    text-align: center;
+  }
+  footer .f_menu ul li {
+    display: inline-block;
   }
   footer .f_menu ul li::after {
     content: '·';
-    width: 40px;
+    width: 2rem;
     text-align: center;
     color: #ccc;
     display: inline-block;
@@ -1047,9 +1046,9 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     width: 0;
   }
   footer .f_menu ul li a {
-    font-size: 15px;
+    font-size: 0.9rem;
     color: #181818;
-    line-height: 69px;
+    line-height: 2.5rem;
   }
   footer .f_menu ul li a.bold {
     font-weight: 700;
@@ -1067,7 +1066,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     padding: 0 5%;
   }
   footer .copy_w .inner .copy {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     position: relative;
   }
   footer .copy_w .inner .copy strong {
@@ -1079,9 +1078,9 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     margin-bottom: 30px;
   }
   footer .copy_w .inner .copy p {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     color: #6e6e6e;
-    line-height: 27px;
+    line-height: 1.5;
   }
   footer .copy_w .inner .copy p span {
     color: #d2d2d2;
@@ -1089,7 +1088,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   footer .copy_w .inner .copy p small {
     font-size: 0.625rem;
     color: #6e6e6e;
-    margin-top: 12px;
+    margin-top: .8em;
     display: block;
   }
   footer .copy_w .inner .copy .awards {
@@ -1138,6 +1137,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     width: 50%;
     color: #878787;
     font-size: 0.875rem;
+    line-height: 1.6;
   }
   footer .copy_w .inner .cs ul li span {
     display: inline-block;
@@ -1224,9 +1224,9 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: relative;
     width: 55px;
     height: 55px;
-    padding-top: 27px;
+    padding-top: 1.5rem;
     border-radius: 28px;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #fff;
     background-color: #239aff;
@@ -2136,7 +2136,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
 
 .contents .rcon_03 {
   width: 100%;
-  background: url("../img/bg_con3.jpg") no-repeat;
+  background: url("../img/bg_con3.jpg") center center no-repeat;
 }
 
 .contents .rcon_03 .tit {
