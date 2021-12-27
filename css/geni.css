@@ -684,7 +684,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     height: 100%;
     display: block;
     width: 100%;
-    padding: 0 5%;
+    padding: 0;
   }
   footer .copy_w .inner .copy {
     padding-top: 3rem;
@@ -835,7 +835,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: fixed;
     z-index: 6;
     top: calc(100% - 150px);
-    right: calc((100% - 1080px) / 2 - 109px);
+    right: 1em;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
   }
@@ -1218,7 +1218,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: fixed;
     z-index: 6;
     top: calc(100% - 150px);
-    right: calc((100% - 1080px) / 2 - 109px);
+    right: 1em;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
   }
@@ -2370,13 +2370,16 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
+  .contents .geni_tab ul li a img {
+    width: 100%;
+  }
   .contents .geni_tab ul li.on::after {
     content: '';
     position: absolute;
     display: block;
-    width: 390px;
+    width: 100%;
     height: 143px;
-    background: url("../img/tab_on.png");
+    background: url("../img/tab_on.png") center center;
     left: 50%;
     top: -41px;
     -webkit-transform: translateX(-50%);
@@ -2437,11 +2440,12 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     content: '';
     position: absolute;
     display: block;
-    width: 387px;
-    height: 265px;
+    width: 35%;
+    height: 35%;
     bottom: 50px;
     left: 60%;
     background: url("../img/genia_03.png");
+    background-size: contain;
   }
   .contents .sec_kids2 .slide_w .slide ul {
     display: -webkit-box;
@@ -2534,7 +2538,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   .contents .geni_v .right .robo_w {
     position: absolute;
     bottom: -50px;
-    left: 12rem;
+    left: 2rem;
     width: 580px;
     height: 396px;
     -webkit-transform: rotate(-8deg);
@@ -2601,11 +2605,11 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   .contents .geni_v .tit_box {
     z-index: 1;
     position: absolute;
-    left: 50%;
-    top: 200px;
-    width: 685px;
-    height: 202px;
-    margin-left: -410px;
+    left: 5%;
+    top: 10em;
+    width: 75%;
+    height: 30%;
+    margin-left: 0;
   }
   .contents .geni_v .tit_box .dot_box {
     position: absolute;
@@ -2620,8 +2624,8 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   }
   .contents .geni_v .tit_box .dot_box .dot {
     position: absolute;
-    width: 31px;
-    height: 33px;
+    width: 1em;
+    height: 1em;
     background: #6900ff;
     display: inline-block;
     -webkit-animation: gv3 2.1s forwards linear;
@@ -2636,6 +2640,10 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
             animation: text 1050ms 2 ease-in;
     -webkit-transform: translatez(0);
             transform: translatez(0);
+    width: 20%;
+  }
+  .contents .geni_v .tit_box .text img {
+    width: 100%;
   }
   .contents .geni_v .tit_box .text_g {
     left: 0;
@@ -2643,31 +2651,31 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
             transform: translate3d(0, 0, 0);
     -webkit-animation: text-g 1050ms ease-in forwards;
             animation: text-g 1050ms ease-in forwards;
-    bottom: -47px;
+    bottom: -16px;
   }
   .contents .geni_v .tit_box .text_e {
-    left: 141px;
+    left: 20%;
     -webkit-animation-delay: 150ms;
             animation-delay: 150ms;
   }
   .contents .geni_v .tit_box .text_n {
-    left: 266px;
+    left: 40%;
     -webkit-animation-delay: 230ms;
             animation-delay: 230ms;
   }
   .contents .geni_v .tit_box .text_i {
-    left: 404px;
+    left: 60%;
     -webkit-animation-delay: 310ms;
             animation-delay: 310ms;
   }
   .contents .geni_v .tit_box .text_a {
-    left: 471px;
+    left: 80%;
     -webkit-animation-delay: 390ms;
             animation-delay: 390ms;
   }
   .contents .geni_v .txt1 {
     position: absolute;
-    left: 50%;
+    left: 10%;
     margin-left: -780px;
     top: 250px;
     -webkit-animation: fadeInUp 1s 2s ease backwards;
@@ -2684,19 +2692,55 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   }
   .contents .geni_v .txt3 {
     position: absolute;
-    left: 50%;
-    margin-left: -410px;
+    left: 10%;
+    margin-left: 0;
     top: 180px;
     -webkit-animation: fadeInUp 1s 2s ease backwards;
             animation: fadeInUp 1s 2s ease backwards;
   }
   .contents .geni_v .txt4 {
     position: absolute;
-    left: 50%;
-    margin-left: -258px;
+    left: 10%;
+    margin-left: 0;
     top: 457px;
     -webkit-animation: fadeInUp 1s 2s ease backwards;
             animation: fadeInUp 1s 2s ease backwards;
+  }
+  @-webkit-keyframes gv2 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    23% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(80%, 0, 0);
+              transform: translate3d(80%, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(80%, 0, 0);
+              transform: translate3d(80%, 0, 0);
+    }
+  }
+  @keyframes gv2 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    23% {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    50% {
+      -webkit-transform: translate3d(80%, 0, 0);
+              transform: translate3d(80%, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(80%, 0, 0);
+              transform: translate3d(80%, 0, 0);
+    }
   }
   .contents .geni_tab {
     width: 100%;
@@ -2728,13 +2772,16 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
+  .contents .geni_tab ul li img {
+    width: 100%;
+  }
   .contents .geni_tab ul li.on::after {
     content: '';
     position: absolute;
     display: block;
-    width: 390px;
+    width: 100%;
     height: 143px;
-    background: url("../img/tab_on.png");
+    background: url("../img/tab_on.png") center center;
     left: 50%;
     top: -41px;
     -webkit-transform: translateX(-50%);
@@ -2795,11 +2842,12 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     content: '';
     position: absolute;
     display: block;
-    width: 387px;
-    height: 265px;
+    width: 35%;
+    height: 35%;
     bottom: 50px;
     left: 60%;
     background: url("../img/genia_03.png");
+    background-size: contain;
   }
   .contents .sec_kids2 .slide_w .slide ul {
     display: -webkit-box;
@@ -2826,6 +2874,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: absolute;
     top: 45%;
     width: 100%;
+    display: none;
   }
   .contents .sec_kids2 .slide_w .arrow .prev {
     left: 5%;

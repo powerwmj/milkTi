@@ -478,6 +478,12 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   top: 15px;
 }
 
+.active {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1100px) {
   .inner {
     width: 100%;
@@ -835,7 +841,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: fixed;
     z-index: 6;
     top: calc(100% - 150px);
-    right: calc((100% - 1080px) / 2 - 109px);
+    right: 1rem;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
   }
@@ -1218,7 +1224,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: fixed;
     z-index: 6;
     top: calc(100% - 150px);
-    right: calc((100% - 1080px) / 2 - 109px);
+    right: 1rem;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
   }
@@ -1681,6 +1687,11 @@ main {
 
 .free_trial .inner .txt {
   width: 50%;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .free_trial .inner .txt h3 {
@@ -1758,6 +1769,14 @@ main {
   z-index: 1;
 }
 
+.fun .inner .txt {
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .fun .inner .txt h3 {
   font-size: 48px;
   color: #181818;
@@ -1780,6 +1799,11 @@ main {
 
 .fun .inner .slide_w {
   position: relative;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .fun .inner .slide_w::before {
@@ -1936,6 +1960,17 @@ main {
   position: relative;
 }
 
+.review_w .inner .txt {
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 1s;
+}
+
 .review_w .inner .txt::after {
   content: '';
   position: absolute;
@@ -2000,6 +2035,14 @@ main {
       -ms-flex-align: stretch;
           align-items: stretch;
   width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 1s;
 }
 
 .review_w .review .inner ul li {
@@ -2031,6 +2074,11 @@ main {
 
 .noti_w .inner .tit {
   margin-bottom: 40px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2070,6 +2118,11 @@ main {
           align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .noti_w .inner ul li {
@@ -2120,6 +2173,11 @@ main {
 
 .free_w .inner .txt {
   margin-bottom: 65px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .free_w .inner .txt h3 {
@@ -2139,6 +2197,11 @@ main {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .free_w .inner ul li {
