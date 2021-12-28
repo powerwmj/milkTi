@@ -2,15 +2,11 @@
 
 main {position: relative;}
 .m_visual {
-    width: 100%; min-height: 700px; background: #239aff;
+    width: 100%; min-height: 900px; background: #239aff;
     .inner {
-<<<<<<< HEAD
-        padding: 150px 0 0 0; height: 100%; width: 100%;
-=======
-        padding: 150px 0; height: 100%; width: 100%;
->>>>>>> eea123306916a92ff797803846f363dd58476cb7
-        .swiper-slide {
-            position: relative; height: 100%; min-height: 900px;
+        padding: 150px 0; height: 100%;
+        .slide {
+            position: relative; height: 100%;
             .txt_w {
                 color: #fff; z-index: 2; position: absolute; left: calc(50% - 500px);
                 h2 {
@@ -32,47 +28,31 @@ main {position: relative;}
                 50% {opacity: 0;}
                 100% {opacity: 1;}
             }
-            
-        }
-        .paging {
-            position: absolute; z-index: 10; transform: rotate(90deg); width: 300px; height: 36px; left: calc(50% - 700px); top: 250px; display: flex;
-            ul {
-                display: flex;
-                li {
-                    a {color: #fff; display: block; line-height: 1; padding: 10px;}
-                    
-                    span.bar {width: 180px; height: 1px; background: rgba(255,255,255,.5); display: inline-block; position: relative !important;}
-                    span.bar.on {background: rgba(255,255,255,1);}
-                    .swiper-pagination-progressbar-fill {background: #fff;}
+            .paging {
+                position: absolute; z-index: 10; transform: rotate(90deg); width: 300px; height: 36px; left: calc(50% - 700px); top: 250px; 
+                ul {
+                    display: flex;
+                    li {
+                        a {color: #fff; display: block; line-height: 1; padding: 10px;}
+                        a.prev {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png'); transform: rotate(-90deg); margin-top: 8px;}
+                        a.next {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png') 0 -15px; transform: rotate(-90deg); margin-top: 8px;}
+                        span.bar {width: 90px; height: 1px; background: rgba(255,255,255,.5); display: inline-block;}
+                        span.bar.on {background: rgba(255,255,255,1);}
+                    }
+                    li.play{
+                        margin-left: 30px; width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7);
+                        a {display: inline-block; width: 18px; height: 18px;}
+                        .pause {background: url('../img/icons.png') 8px -40px;  transform: rotate(-90deg);}
+                    }
                 }
-                li.play{
-<<<<<<< HEAD
-                    width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7);
-=======
-                     width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7);
->>>>>>> eea123306916a92ff797803846f363dd58476cb7
-                    a {display: inline-block; width: 18px; height: 18px;}
-                    
-                }
-                
             }
-            a {color: #fff; display: inline-block; line-height: 1; padding: 10px;}
-            a.prev {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png'); transform: rotate(-90deg); margin-top: 8px;}
-            a.next {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png') 0 -15px; transform: rotate(-90deg); margin-top: 8px;}
-            p.play {margin-left: 30px; width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7);}
-            .pause {background: url('../img/icons.png') 8px -35px; transform: rotate(-90deg); }
         }
     }
 }
-.swiper {overflow: visible !important;}
 .wave {
     animation: wave 8s infinite linear; 
     height: 300px;
-<<<<<<< HEAD
-    position: absolute; top: 757px; width: 100%; z-index: 0; 
-=======
-    position: absolute; top: 900px; width: 100%; z-index: 0; 
->>>>>>> eea123306916a92ff797803846f363dd58476cb7
+    position: absolute; top: 720px; width: 100%; z-index: 0; 
     background: url('../img/wave.svg') 0 0 repeat-x;
     background-size: 50%;
 
@@ -82,17 +62,17 @@ main {position: relative;}
 }
 
 .obj_w {
-    position: relative; width: 100%; height: 700px;
+    position: relative; width: 100%; height: 900px;
     div {position: absolute;}
-    .obj_1 {width: 580px; height: 580px; background: url('../img/objs_top.png'); left: 90%; top: -750px; z-index: 3; animation: obj1 6s infinite linear;}
+    .obj_1 {width: 580px; height: 580px; background: url('../img/objs_top.png'); left: 80%; top: -750px; z-index: 3; animation: obj1 6s infinite linear;}
     .obj_2 {width: 320px; height: 320px; background: url('../img/objs_top.png') 0 -580px; right: 0; top: -300px; z-index: 4; animation: obj2 15s infinite linear;}
     .obj_3 {width: 270px; height: 270px; background: url('../img/objs_top.png') 0 -900px; left: 70%; top: 0; z-index: 3; animation: obj3 5s infinite linear;}
     .obj_4 {width: 365px; height: 330px; background: url('../img/objs_top.png') 0 -1170px; left: 80%; top: -25px; z-index: 4; animation: obj4 10s infinite linear;}
     .obj_5 {width: 210px; height: 210px; background: url('../img/objs_top.png') 0 -1500px; left: 85%; bottom: 100px; z-index: 3; animation: obj5 10s infinite linear;}
-    .obj_6 {width: 340px; height: 340px; background: url('../img/objs_top.png') 0 -1710px; left: -50px; bottom: 700px; animation: obj6 10s infinite linear;}
-    .obj_7 {width: 370px; height: 250px; background: url('../img/objs_top.png') 0 -2050px; left:  10%; top: -400px;}
-    .obj_8 {width: 365px; height: 330px; background: url('../img/objs_top.png') 0 -2300px; left: 18%; top: -350px; animation: obj8 8s infinite linear;}
-    .obj_9 {width: 145px; height: 145px; background: url('../img/objs_top.png') 0 -2630px; left: 25%; top: -200px; animation: obj9 5s infinite linear;}
+    .obj_6 {width: 340px; height: 340px; background: url('../img/objs_top.png') 0 -1710px; left: -50px; bottom: 300px; animation: obj6 10s infinite linear;}
+    .obj_7 {width: 370px; height: 250px; background: url('../img/objs_top.png') 0 -2050px; left:  10%; top: -150px;}
+    .obj_8 {width: 365px; height: 330px; background: url('../img/objs_top.png') 0 -2300px; left: 18%; top: -75px; animation: obj8 8s infinite linear;}
+    .obj_9 {width: 145px; height: 145px; background: url('../img/objs_top.png') 0 -2630px; left: 25%; top: 200px; animation: obj9 5s infinite linear;}
 }
 
 @keyframes obj1 {
@@ -117,12 +97,12 @@ main {position: relative;}
     100% {transform: rotate(360deg);}
 }
 @keyframes obj9 {
-    50% {top: -150px;}
-    100% {top: -200px;}
+    50% {top: 250px;}
+    100% {top: 200px;}
 }
 
 .free_trial {
-    margin-top: -715px; margin-bottom: 100px; position: relative; z-index: 5;
+    margin-top: -700px; margin-bottom: 100px; position: relative; z-index: 5;
     .inner {
         display: flex;
         >div:nth-of-type(1){
@@ -130,7 +110,7 @@ main {position: relative;}
             animation: cir 5s infinite linear;
         }
         .txt {
-            width: 50%; opacity: 0; transform: translateY(50%); transition: 1s;
+            width: 50%;
             h3 {font-size: 48px; color: #181818; line-height: 65px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 40px;
                 span {color: #07a3ea;}
             }
@@ -149,14 +129,14 @@ main {position: relative;}
 .fun {
     .inner {
         position: relative; z-index: 1;
-        .txt { opacity: 0; transform: translateY(50%); transition: 1s;
+        .txt {
             h3 {font-size: 48px; color: #181818; line-height: 65px; font-weight: 700; letter-spacing: -0.025em; margin-bottom: 40px;
                 span {color: #07a3ea;}
             }
             p {font-size: 19px; color: #898886; line-height: 34px; margin-bottom: 55px;}
         }
         .slide_w {
-            position: relative; opacity: 0; transform: translateY(50%); transition: 1s;
+            position: relative;
             &::before {@include ab_c; width: 100px; height: 100px; top: -165px; right: 15%; background: url('../img/objs_char.png'); animation: char 2s infinite linear;}
             &::after {@include ab_c; width: 125px; height: 160px; top: -90px; right: 30%; background: url('../img/objs_char.png') 0 -100px; z-index: -1;}
             @keyframes char {
@@ -170,16 +150,13 @@ main {position: relative;}
                 .next {right: 60px; background-position: 0 -60px;}
             }
             .slide {
-                @include flex(space-between, stretch); 
+                @include flex(space-between, stretch);
                 &::before {@include ab_c; width: 100px; height: 120px; bottom: 135px; right: -75px; background: url('../img/objs_char.png') 0 -265px;}
                 &::after {@include ab_c; width: 175px; height: 155px; bottom: 135px; left: -140px; background: url('../img/objs_char.png') 0 -385px; z-index: -1;}
                 li {
-                    width: 100%;
-                    div {display: inline-block; margin-right: 50px;}
-                    div:nth-of-type(2){margin-right: 0;}
-                    div .img {padding: 29px; border: 3px solid #eef5fb; border-radius: 25px; background: #fff; display: block; margin-bottom: 28px;}
-                    div strong {font-size: 24px; color: #181818; font-weight: 500; margin-bottom: 16px; display: block;}
-                    div p {font-size: 16px; color: #898886; line-height: 30px;}
+                    .img {padding: 29px; border: 3px solid #eef5fb; border-radius: 25px; background: #fff; display: block; margin-bottom: 28px;}
+                    strong {font-size: 24px; color: #181818; font-weight: 500; margin-bottom: 16px; display: block;}
+                    p {font-size: 16px; color: #898886; line-height: 30px;}
                 }
             }
         }
@@ -194,7 +171,7 @@ main {position: relative;}
 .review_w {
     margin-top: -230px; 
     .inner {position: relative;
-        .txt { opacity: 0; transform: translateY(50%); transition: 1s; opacity: 0; transform: translateY(50%); transition: 1s;
+        .txt {
             &::after {@include ab_c; width: 443px; height: 92px; top: 139px; right: 0; background: url('../img/img_review_friend.png');}
             h3 {font-size: 48px; color: #181818; line-height: 65px; font-weight: 700; letter-spacing: -0.025em; margin-bottom: 40px;
                 span {color: #07a3ea;}
@@ -210,7 +187,7 @@ main {position: relative;}
         .inner {
             @include flex(space-around, center); height: 100%;
             ul {
-                @include flex(space-between, stretch); width: 100%; opacity: 0; transform: translateY(50%); transition: 1s; opacity: 0; transform: translateY(50%); transition: 1s;
+                @include flex(space-between, stretch); width: 100%;
                 li {
                     text-align: center;
                     .img {display: block; margin-bottom: 25px;}
@@ -226,13 +203,13 @@ main {position: relative;}
     .inner{
         padding: 120px 0;
         .tit {
-            margin-bottom: 40px; opacity: 0; transform: translateY(50%); transition: 1s;
+            margin-bottom: 40px;
             @include flex(space-between, center); width: 100%; height: 28px;
             h3 {font-size: 28px; line-height: 1; color: #181818;}
             a {display: inline-block; width: 36px; height: 36px; background: url('../img/icons.png') 0 -120px; font-size: 0;}
         }
         ul {
-            @include flex(space-between, stretch); flex-wrap: wrap; opacity: 0; transform: translateY(50%); transition: 1s;
+            @include flex(space-between, stretch); flex-wrap: wrap;
             li {
                 padding: 35px 0; @include flex(space-between, center); width: 30%; border-bottom: 1px solid #e5e5e5;
                 .txt {
@@ -253,11 +230,11 @@ main {position: relative;}
     .inner {
         padding-bottom: 120px;
         .txt {
-            margin-bottom: 65px; opacity: 0; transform: translateY(50%); transition: 1s;
+            margin-bottom: 65px;
             h3 {font-size: 28px; line-height: 1; color: #181818;}
         }
         ul {
-            @include flex(space-between, center);overflow: hidden; opacity: 0; transform: translateY(50%); transition: 1s;
+            @include flex(space-between, center);overflow: hidden;
             li {
                 width: 20%; height: 100%; text-align: center; position: relative;
                 &::after {@include ab_c; border-left: 1px solid #e5e5e5; width: 100%; height: 100%; top: 0; left: -38px; z-index: -1;}
@@ -305,23 +282,22 @@ main {position: relative;}
                     50% {opacity: 0;}
                     100% {opacity: 1;}
                 }
-                
-            }
-            .paging {
-                position: absolute; z-index: 10; transform: rotate(0); width: 300px; height: 36px; left: 40px; top: 500px; 
-                ul {
-                    display: flex;
-                    li {
-                        a {color: #fff; display: block; line-height: 1; padding: 10px;}
-                        a.prev {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png'); transform: rotate(-90deg); margin-top: 8px;}
-                        a.next {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png') 0 -15px; transform: rotate(-90deg); margin-top: 8px;}
-                        span.bar {width: 90px; height: 1px; background: rgba(255,255,255,.5); display: inline-block;}
-                        span.bar.on {background: rgba(255,255,255,1);}
-                    }
-                    li.play{
-                        margin-left: 30px; width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7); transform: rotate(90deg);
-                        a {display: inline-block; width: 18px; height: 18px;}
-                        .pause {background: url('../img/icons.png') 8px -40px;  transform: rotate(-90deg);}
+                .paging {
+                    position: absolute; z-index: 10; transform: rotate(0); width: 300px; height: 36px; left: 40px; top: 500px; 
+                    ul {
+                        display: flex;
+                        li {
+                            a {color: #fff; display: block; line-height: 1; padding: 10px;}
+                            a.prev {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png'); transform: rotate(-90deg); margin-top: 8px;}
+                            a.next {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png') 0 -15px; transform: rotate(-90deg); margin-top: 8px;}
+                            span.bar {width: 90px; height: 1px; background: rgba(255,255,255,.5); display: inline-block;}
+                            span.bar.on {background: rgba(255,255,255,1);}
+                        }
+                        li.play{
+                            margin-left: 30px; width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7); transform: rotate(90deg);
+                            a {display: inline-block; width: 18px; height: 18px;}
+                            .pause {background: url('../img/icons.png') 8px -40px;  transform: rotate(-90deg);}
+                        }
                     }
                 }
             }
@@ -566,23 +542,22 @@ main {position: relative;}
                     50% {opacity: 0;}
                     100% {opacity: 1;}
                 }
-                
-            }
-            .paging {
-                position: absolute; z-index: 10; transform: rotate(0); width: 200px; height: 36px; left: 40px; top: 32rem; 
-                ul {
-                    display: flex;
-                    li {
-                        a {color: #fff; display: block; line-height: 1; padding: 10px;}
-                        a.prev {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png'); transform: rotate(-90deg); margin-top: 8px;}
-                        a.next {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png') 0 -15px; transform: rotate(-90deg); margin-top: 8px;}
-                        span.bar {width: 2.5rem; height: 1px; background: rgba(255,255,255,.5); display: inline-block;}
-                        span.bar.on {background: rgba(255,255,255,1);}
-                    }
-                    li.play{
-                        margin-left: 30px; width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7); transform: rotate(90deg);
-                        a {display: inline-block; width: 18px; height: 18px;}
-                        .pause {background: url('../img/icons.png') 8px -40px;  transform: rotate(-90deg);}
+                .paging {
+                    position: absolute; z-index: 10; transform: rotate(0); width: 200px; height: 36px; left: 40px; top: 28rem; 
+                    ul {
+                        display: flex;
+                        li {
+                            a {color: #fff; display: block; line-height: 1; padding: 10px;}
+                            a.prev {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png'); transform: rotate(-90deg); margin-top: 8px;}
+                            a.next {width: 15px; height: 15px; font-size: 0; background: url('../img/icons.png') 0 -15px; transform: rotate(-90deg); margin-top: 8px;}
+                            span.bar {width: 2.5rem; height: 1px; background: rgba(255,255,255,.5); display: inline-block;}
+                            span.bar.on {background: rgba(255,255,255,1);}
+                        }
+                        li.play{
+                            margin-left: 30px; width: 48px; height: 48px; padding: 15px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7); transform: rotate(90deg);
+                            a {display: inline-block; width: 18px; height: 18px;}
+                            .pause {background: url('../img/icons.png') 8px -40px;  transform: rotate(-90deg);}
+                        }
                     }
                 }
             }

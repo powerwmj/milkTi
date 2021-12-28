@@ -77,7 +77,11 @@
             width: 1580px; margin: 0 0 0 340px; overflow: hidden;
             .motion { transform: translateY(50%); opacity: 0; transition: 1s; width: 1116px; margin: 0 464px 0 0;}
             .tit {
+<<<<<<< HEAD
                 padding-bottom: 80px; transform: translateY(50%); opacity: 0; transition: 1s; margin: 0 ;
+=======
+                padding-bottom: 80px; transform: translateY(50%); opacity: 0; transition: 1s; margin: 0 auto;
+>>>>>>> eea123306916a92ff797803846f363dd58476cb7
                 h3 {
                     font-size: 56px; line-height: 1; color: #161616; font-weight: 700;
                     span {color: #06a3ea;}

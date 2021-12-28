@@ -1576,7 +1576,11 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
+<<<<<<< HEAD
   margin: 0;
+=======
+  margin: 0 auto;
+>>>>>>> eea123306916a92ff797803846f363dd58476cb7
 }
 
 .contents .review_w .inner .tit h3 {

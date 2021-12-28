@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/sub.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/swiper_intro.js"></script>
     <title>천재교과서 밀크T아이</title>
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://powerwmj.github.io/milkt/">
@@ -83,7 +88,7 @@
                             아이가 커갈수록 엄마, 아빠의 고민은 깊어만 갑니다!<br>
                             그래서 유아 발달에 맞춘 <span>밀크T아이</span>가 탄생했습니다.
                         </p>
-                        <h3>
+                        <h3 class="motion">
                             <strong>내 아이가 진짜 성장하는 그 변화</strong><br>
                             밀크T아이는 자신 있습니다.
                         </h3>
@@ -93,7 +98,7 @@
 
             <div class="cont_2">
                 <div class="inner">
-                    <div class="con_w">
+                    <div class="con_w motion">
                         <div class="txt">
                             <h3>
                                 밀크T아이의<br><strong>스마트한 교육 목표</strong>
@@ -109,7 +114,7 @@
                         <div class="obj_01"><img src="img/index_obj3.png" alt=""></div>
                     </div>
 
-                    <div class="con_w">
+                    <div class="con_w motion">
                         <div class="obj_02"></div>
                         <div class="txt">
                             <h3>
@@ -131,88 +136,123 @@
             </div>
 
             <div class="review_w">
-                <div class="inner">
-                    <div class="tit">
+                <div class="inner slider_w">
+                    <div class="tit motion">
                         <h3>아이다운 <span>스마트학습법</span></h3>
                     </div>
-
-                    <div class="box_w">
-
-                        <div class="box">
-                            <div class="box_inner">
-                                <h4><span>놀이로 배우는 아이 밀크T아이</span></h4>
-                                <div class="qna">
-                                    <p class="q">
-                                        놀이처럼<br>놀면서도 공부가 된다고요?
-                                    </p>
-                                    <p class="a">
-                                        밀크T아이가 말합니다.<br>
-                                        <span>유아의 성장에 더 필요한 것은 오히려 창의적인 놀이입니다.</span>
-                                    </p>
-                                    <p class="c">
-                                        밀크T 아이는 취학 전 아이들이 놀이처럼 즐겁게 공부할 수 있도록<br>
-                                        전신반응교육법 기반의 창의적인 놀이로<br>
-                                        즐거운 경험을 제공합니다.
-                                    </p>
-                                </div>
-                                <ul class="img">
-                                    <li>
-                                        <img src="img/index_qa_img1_1.jpg" alt="">
-                                        <p>동화, 한글, 수학, 영어 등 재미있는 퀴즈놀이</p>
-                                    </li>
-                                    <li>
-                                        <img src="img/index_qa_img1_2.jpg" alt="">
-                                        <p>참여형 인터랙티브 활동으로 재미있게</p>
-                                    </li>
-                                    <li>
-                                        <img src="img/index_qa_img1_3.jpg" alt="">
-                                        <p>선물상자를 통해 매일 즐거운 보상혜택</p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!--div class="box">
-                                <div-- class="box_inner">
-                                    <h4><span>우리아이 첫 공부 밀크T아이</span></h4>
+                    <div class="motion">
+                        <div class="box_w swiper-wrapper">
+                            <div class="box swiper-slide">
+                                <div class="box_inner">
+                                    <h4><span>놀이로 배우는 아이 밀크T아이</span></h4>
                                     <div class="qna">
                                         <p class="q">
-                                            생애 처음<br>아이 공부 어떻게 시작해야 하나요?
+                                            놀이처럼<br>놀면서도 공부가 된다고요?
                                         </p>
                                         <p class="a">
                                             밀크T아이가 말합니다.<br>
-                                            <span>아이들 개개인에 맞춘 학습이어야 매일 성장할 수 있습니다.</span>
+                                            <span>유아의 성장에 더 필요한 것은 오히려 창의적인 놀이입니다.</span>
                                         </p>
                                         <p class="c">
-                                            아이들의 학습 수준, 선호 콘텐츠,<br>
-                                            학습시 반응을 파악하여 아이에게 최적화된 학습을 진행합니다
+                                            밀크T 아이는 취학 전 아이들이 놀이처럼 즐겁게 공부할 수 있도록<br>
+                                            전신반응교육법 기반의 창의적인 놀이로<br>
+                                            즐거운 경험을 제공합니다.
                                         </p>
                                     </div>
                                     <ul class="img">
                                         <li>
-                                            <img src="img/index_qa_img3_1.jpg" alt="">
-                                            <p>AI진단평가를 통한 정확한 진단</p>
+                                            <img src="img/index_qa_img1_1.jpg" alt="">
+                                            <p>동화, 한글, 수학, 영어 등 재미있는 퀴즈놀이</p>
                                         </li>
                                         <li>
-                                            <img src="img/index_qa_img3_2.jpg" alt="">
-                                            <p>매일 과목별 맞춤 시간표</p>
+                                            <img src="img/index_qa_img1_2.jpg" alt="">
+                                            <p>참여형 인터랙티브 활동으로 재미있게</p>
                                         </li>
                                         <li>
-                                            <img src="img/index_qa_img3_3.jpg" alt="">
-                                            <p>아이들의 감정까지 파악, 맞춤 학습 제공</p>
+                                            <img src="img/index_qa_img1_3.jpg" alt="">
+                                            <p>선물상자를 통해 매일 즐거운 보상혜택</p>
                                         </li>
                                     </ul>
-                                </div-->
-                                
-                                <div class="btn_next">
-                                    <a href="#">다음</a>
                                 </div>
+                            </div>
+
+                            <div class="box swiper-slide">
+                                <div class="box_inner">
+                                    <h4><span>우리아이 첫 공부 밀크T아이</span></h4>
+                                    <div class="qna">
+                                            <p class="q">
+                                                생애 처음<br>아이 공부 어떻게 시작해야 하나요?
+                                            </p>
+                                            <p class="a">
+                                                밀크T아이가 말합니다.<br>
+                                                <span>아이들 개개인에 맞춘 학습이어야 매일 성장할 수 있습니다.</span>
+                                            </p>
+                                            <p class="c">
+                                                아이들의 학습 수준, 선호 콘텐츠,<br>
+                                                학습시 반응을 파악하여 아이에게 최적화된 학습을 진행합니다
+                                            </p>
+                                    </div>
+                                    <ul class="img">
+                                            <li>
+                                                <img src="img/index_qa_img3_1.jpg" alt="">
+                                                <p>AI진단평가를 통한 정확한 진단</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/index_qa_img3_2.jpg" alt="">
+                                                <p>매일 과목별 맞춤 시간표</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/index_qa_img3_3.jpg" alt="">
+                                                <p>아이들의 감정까지 파악, 맞춤 학습 제공</p>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                            <div class="box swiper-slide">
+                                <div class="box_inner">
+                                    <h4><span>우리아이 공부친구 밀크T아이</span></h4>
+                                    <div class="qna">
+                                            <p class="q">
+                                                우리 아이가<br>아직 어린데 잘 할 수 있을까요?
+                                            </p>
+                                            <p class="a">
+                                                밀크T아이가 말합니다.<br>
+                                                <span>밀크T의 콘텐츠, 선생님, 시스템 모두 아이를 먼저 생각합니다.</span>
+                                            </p>
+                                            <p class="c">
+                                                우리 아이가 또래보다 좀 느려서, 우리 아이가 또래보다 좀 빨라서<br>
+                                                아이들의 성장 속도는 모두 다릅니다.<br>
+                                                아이가 내딛는 첫걸음, 그 걸음 하나하나를 아이와 맞추어서 학습합니다.<br>
+                                                1:1 개별 맞춤이니 걱정하지 않으셔도 됩니다.
+                                            </p>
+                                    </div>
+                                    <ul class="img">
+                                            <li>
+                                                <img src="img/index_qa_img3_1.jpg" alt="">
+                                                <p>AI진단평가를 통한 정확한 진단</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/index_qa_img3_2.jpg" alt="">
+                                                <p>매일 과목별 맞춤 시간표</p>
+                                            </li>
+                                            <li>
+                                                <img src="img/index_qa_img3_3.jpg" alt="">
+                                                <p>아이들의 감정까지 파악, 맞춤 학습 제공</p>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>                            
                         </div>
+                        <div class="btn_next">
+                            <a href="#">다음</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
             <div class="btn_area">
-                <div class="inner">
+                <div class="inner motion">
                     <h3>아이다운 스마트학습법 밀크T아이</h3>
                     <p>직접 체험해보고 결정하세요. 왜 밀크T아이 여야 하는지 알 수 있습니다.</p>
                     <a href="#">무료체험 신청하기</a>
@@ -225,7 +265,7 @@
 
             <div class="noti_w">
                 <div class="inner">
-                    <dl>
+                    <dl class="motion">
                         <dt>꼭 읽어보세요!</dt>
                         <dd>무료체험 신청은 아이디당 1회로 제한됩니다.</dd>
                         <dd>학습기 훼손 시 삼성전자 AS를 통해 수리 후, 반납합니다.</dd>
@@ -233,7 +273,7 @@
                         <dd>기존 밀크T아이 체험 이력이 있는 고객은 무료체험 대상에서 제외됩니다.</dd>
                         <dd>학습기를 고의적 미반납할 경우 민형사상 책임을 질 수 있습니다.</dd>
                     </dl>
-                    <dl>
+                    <dl class="motion">
                         <dt>밀크T 전용 학습기 AS 방법</dt>
                         <dd>학습기는 <span>삼성 AS 보상 정책</span>에 의거하여 서비스가 제공됩니다.</dd>
                         <dd>삼성전자 서비스센터 : 월요일~토요일 오전 9시~오후 6시(일요일, 공휴일 휴무)</dd>
