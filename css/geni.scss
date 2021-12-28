@@ -234,6 +234,7 @@
     
     }
 }
+.motion {transform: translateY(50%); opacity: 0; transition: 1s;}
 
 @media screen and (max-width: 767px) {
     .contents { 
