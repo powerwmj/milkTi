@@ -690,7 +690,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     height: 100%;
     display: block;
     width: 100%;
-    padding: 0 5%;
+    padding: 0;
   }
   footer .copy_w .inner .copy {
     padding-top: 3rem;
@@ -841,7 +841,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: fixed;
     z-index: 6;
     top: calc(100% - 150px);
-    right: 1rem;
+    right: 1em;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
   }
@@ -1224,7 +1224,7 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
     position: fixed;
     z-index: 6;
     top: calc(100% - 150px);
-    right: 1rem;
+    right: 1em;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
   }
@@ -1259,44 +1259,46 @@ main {
 
 .m_visual {
   width: 100%;
-  min-height: 900px;
+  min-height: 700px;
   background: #239aff;
 }
 
 .m_visual .inner {
-  padding: 150px 0;
+  padding: 150px 0 0 0;
   height: 100%;
+  width: 100%;
 }
 
-.m_visual .inner .slide {
+.m_visual .inner .swiper-slide {
   position: relative;
   height: 100%;
+  min-height: 900px;
 }
 
-.m_visual .inner .slide .txt_w {
+.m_visual .inner .swiper-slide .txt_w {
   color: #fff;
   z-index: 2;
   position: absolute;
   left: calc(50% - 500px);
 }
 
-.m_visual .inner .slide .txt_w h2 {
+.m_visual .inner .swiper-slide .txt_w h2 {
   font-size: 96px;
   line-height: 130px;
   font-weight: 700;
 }
 
-.m_visual .inner .slide .txt_w h2 span {
+.m_visual .inner .swiper-slide .txt_w h2 span {
   color: #fff839;
 }
 
-.m_visual .inner .slide .txt_w p {
+.m_visual .inner .swiper-slide .txt_w p {
   font-size: 20px;
   line-height: 35px;
   margin-top: 55px;
 }
 
-.m_visual .inner .slide .img_w {
+.m_visual .inner .swiper-slide .img_w {
   position: absolute;
   left: calc(50% - 100px);
   top: 0;
@@ -1305,7 +1307,7 @@ main {
   z-index: 1;
 }
 
-.m_visual .inner .slide .img_w span {
+.m_visual .inner .swiper-slide .img_w span {
   display: inline-block;
   width: 390px;
   height: 50px;
@@ -1354,7 +1356,7 @@ main {
   }
 }
 
-.m_visual .inner .slide .paging {
+.m_visual .inner .paging {
   position: absolute;
   z-index: 10;
   -webkit-transform: rotate(90deg);
@@ -1363,22 +1365,62 @@ main {
   height: 36px;
   left: calc(50% - 700px);
   top: 250px;
-}
-
-.m_visual .inner .slide .paging ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.m_visual .inner .slide .paging ul li a {
+.m_visual .inner .paging ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.m_visual .inner .paging ul li a {
   color: #fff;
   display: block;
   line-height: 1;
   padding: 10px;
 }
 
-.m_visual .inner .slide .paging ul li a.prev {
+.m_visual .inner .paging ul li span.bar {
+  width: 180px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  position: relative !important;
+}
+
+.m_visual .inner .paging ul li span.bar.on {
+  background: white;
+}
+
+.m_visual .inner .paging ul li .swiper-pagination-progressbar-fill {
+  background: #fff;
+}
+
+.m_visual .inner .paging ul li.play {
+  width: 48px;
+  height: 48px;
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.m_visual .inner .paging ul li.play a {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.m_visual .inner .paging a {
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: 10px;
+}
+
+.m_visual .inner .paging a.prev {
   width: 15px;
   height: 15px;
   font-size: 0;
@@ -1388,7 +1430,7 @@ main {
   margin-top: 8px;
 }
 
-.m_visual .inner .slide .paging ul li a.next {
+.m_visual .inner .paging a.next {
   width: 15px;
   height: 15px;
   font-size: 0;
@@ -1398,18 +1440,7 @@ main {
   margin-top: 8px;
 }
 
-.m_visual .inner .slide .paging ul li span.bar {
-  width: 90px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.5);
-  display: inline-block;
-}
-
-.m_visual .inner .slide .paging ul li span.bar.on {
-  background: white;
-}
-
-.m_visual .inner .slide .paging ul li.play {
+.m_visual .inner .paging p.play {
   margin-left: 30px;
   width: 48px;
   height: 48px;
@@ -1418,16 +1449,14 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.m_visual .inner .slide .paging ul li.play a {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-}
-
-.m_visual .inner .slide .paging ul li.play .pause {
-  background: url("../img/icons.png") 8px -40px;
+.m_visual .inner .paging .pause {
+  background: url("../img/icons.png") 8px -35px;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.swiper {
+  overflow: visible !important;
 }
 
 .wave {
@@ -1435,7 +1464,7 @@ main {
           animation: wave 8s infinite linear;
   height: 300px;
   position: absolute;
-  top: 720px;
+  top: 757px;
   width: 100%;
   z-index: 0;
   background: url("../img/wave.svg") 0 0 repeat-x;
@@ -1457,7 +1486,7 @@ main {
 .obj_w {
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 700px;
 }
 
 .obj_w div {
@@ -1468,7 +1497,7 @@ main {
   width: 580px;
   height: 580px;
   background: url("../img/objs_top.png");
-  left: 80%;
+  left: 90%;
   top: -750px;
   z-index: 3;
   -webkit-animation: obj1 6s infinite linear;
@@ -1524,7 +1553,7 @@ main {
   height: 340px;
   background: url("../img/objs_top.png") 0 -1710px;
   left: -50px;
-  bottom: 300px;
+  bottom: 700px;
   -webkit-animation: obj6 10s infinite linear;
           animation: obj6 10s infinite linear;
 }
@@ -1534,7 +1563,7 @@ main {
   height: 250px;
   background: url("../img/objs_top.png") 0 -2050px;
   left: 10%;
-  top: -150px;
+  top: -400px;
 }
 
 .obj_w .obj_8 {
@@ -1542,7 +1571,7 @@ main {
   height: 330px;
   background: url("../img/objs_top.png") 0 -2300px;
   left: 18%;
-  top: -75px;
+  top: -350px;
   -webkit-animation: obj8 8s infinite linear;
           animation: obj8 8s infinite linear;
 }
@@ -1552,7 +1581,7 @@ main {
   height: 145px;
   background: url("../img/objs_top.png") 0 -2630px;
   left: 25%;
-  top: 200px;
+  top: -200px;
   -webkit-animation: obj9 5s infinite linear;
           animation: obj9 5s infinite linear;
 }
@@ -1649,24 +1678,24 @@ main {
 
 @-webkit-keyframes obj9 {
   50% {
-    top: 250px;
+    top: -150px;
   }
   100% {
-    top: 200px;
+    top: -200px;
   }
 }
 
 @keyframes obj9 {
   50% {
-    top: 250px;
+    top: -150px;
   }
   100% {
-    top: 200px;
+    top: -200px;
   }
 }
 
 .free_trial {
-  margin-top: -700px;
+  margin-top: -715px;
   margin-bottom: 100px;
   position: relative;
   z-index: 5;
@@ -1908,7 +1937,20 @@ main {
   z-index: -1;
 }
 
-.fun .inner .slide_w .slide li .img {
+.fun .inner .slide_w .slide li {
+  width: 100%;
+}
+
+.fun .inner .slide_w .slide li div {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.fun .inner .slide_w .slide li div:nth-of-type(2) {
+  margin-right: 0;
+}
+
+.fun .inner .slide_w .slide li div .img {
   padding: 29px;
   border: 3px solid #eef5fb;
   border-radius: 25px;
@@ -1917,7 +1959,7 @@ main {
   margin-bottom: 28px;
 }
 
-.fun .inner .slide_w .slide li strong {
+.fun .inner .slide_w .slide li div strong {
   font-size: 24px;
   color: #181818;
   font-weight: 500;
@@ -1925,7 +1967,7 @@ main {
   display: block;
 }
 
-.fun .inner .slide_w .slide li p {
+.fun .inner .slide_w .slide li div p {
   font-size: 16px;
   color: #898886;
   line-height: 30px;
@@ -2358,7 +2400,7 @@ main {
       opacity: 1;
     }
   }
-  .m_visual .inner .slide .paging {
+  .m_visual .inner .paging {
     position: absolute;
     z-index: 10;
     -webkit-transform: rotate(0);
@@ -2368,18 +2410,18 @@ main {
     left: 40px;
     top: 500px;
   }
-  .m_visual .inner .slide .paging ul {
+  .m_visual .inner .paging ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .m_visual .inner .slide .paging ul li a {
+  .m_visual .inner .paging ul li a {
     color: #fff;
     display: block;
     line-height: 1;
     padding: 10px;
   }
-  .m_visual .inner .slide .paging ul li a.prev {
+  .m_visual .inner .paging ul li a.prev {
     width: 15px;
     height: 15px;
     font-size: 0;
@@ -2388,7 +2430,7 @@ main {
             transform: rotate(-90deg);
     margin-top: 8px;
   }
-  .m_visual .inner .slide .paging ul li a.next {
+  .m_visual .inner .paging ul li a.next {
     width: 15px;
     height: 15px;
     font-size: 0;
@@ -2397,16 +2439,16 @@ main {
             transform: rotate(-90deg);
     margin-top: 8px;
   }
-  .m_visual .inner .slide .paging ul li span.bar {
+  .m_visual .inner .paging ul li span.bar {
     width: 90px;
     height: 1px;
     background: rgba(255, 255, 255, 0.5);
     display: inline-block;
   }
-  .m_visual .inner .slide .paging ul li span.bar.on {
+  .m_visual .inner .paging ul li span.bar.on {
     background: white;
   }
-  .m_visual .inner .slide .paging ul li.play {
+  .m_visual .inner .paging ul li.play {
     margin-left: 30px;
     width: 48px;
     height: 48px;
@@ -2416,12 +2458,12 @@ main {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  .m_visual .inner .slide .paging ul li.play a {
+  .m_visual .inner .paging ul li.play a {
     display: inline-block;
     width: 18px;
     height: 18px;
   }
-  .m_visual .inner .slide .paging ul li.play .pause {
+  .m_visual .inner .paging ul li.play .pause {
     background: url("../img/icons.png") 8px -40px;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -3220,7 +3262,7 @@ main {
       opacity: 1;
     }
   }
-  .m_visual .inner .slide .paging {
+  .m_visual .inner .paging {
     position: absolute;
     z-index: 10;
     -webkit-transform: rotate(0);
@@ -3228,20 +3270,20 @@ main {
     width: 200px;
     height: 36px;
     left: 40px;
-    top: 28rem;
+    top: 32rem;
   }
-  .m_visual .inner .slide .paging ul {
+  .m_visual .inner .paging ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .m_visual .inner .slide .paging ul li a {
+  .m_visual .inner .paging ul li a {
     color: #fff;
     display: block;
     line-height: 1;
     padding: 10px;
   }
-  .m_visual .inner .slide .paging ul li a.prev {
+  .m_visual .inner .paging ul li a.prev {
     width: 15px;
     height: 15px;
     font-size: 0;
@@ -3250,7 +3292,7 @@ main {
             transform: rotate(-90deg);
     margin-top: 8px;
   }
-  .m_visual .inner .slide .paging ul li a.next {
+  .m_visual .inner .paging ul li a.next {
     width: 15px;
     height: 15px;
     font-size: 0;
@@ -3259,16 +3301,16 @@ main {
             transform: rotate(-90deg);
     margin-top: 8px;
   }
-  .m_visual .inner .slide .paging ul li span.bar {
+  .m_visual .inner .paging ul li span.bar {
     width: 2.5rem;
     height: 1px;
     background: rgba(255, 255, 255, 0.5);
     display: inline-block;
   }
-  .m_visual .inner .slide .paging ul li span.bar.on {
+  .m_visual .inner .paging ul li span.bar.on {
     background: white;
   }
-  .m_visual .inner .slide .paging ul li.play {
+  .m_visual .inner .paging ul li.play {
     margin-left: 30px;
     width: 48px;
     height: 48px;
@@ -3278,12 +3320,12 @@ main {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  .m_visual .inner .slide .paging ul li.play a {
+  .m_visual .inner .paging ul li.play a {
     display: inline-block;
     width: 18px;
     height: 18px;
   }
-  .m_visual .inner .slide .paging ul li.play .pause {
+  .m_visual .inner .paging ul li.play .pause {
     background: url("../img/icons.png") 8px -40px;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
