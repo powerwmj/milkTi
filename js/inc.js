@@ -6,14 +6,14 @@ $('footer').load('inc.html footer .f_w');
 
 function navi(){
     if(localStorage.pageNum){
-    $('header a').eq(localStorage.pageNum).addClass('on');
+    $('header li').eq(localStorage.pageNum).find('a').addClass('on');
     }
     if(Number(localStorage.pageNum) >= 0 ){
         $('header').addClass('sub');
     }
     $('header h1 a').on('click', function(e){
-        $('header').removeClass('sub');
         e.preventDefault();
+        localStorage.pageNum = null;
         location.href = $(this).attr('href');
         
     })
