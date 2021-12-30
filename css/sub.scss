@@ -77,7 +77,7 @@
             width: 1580px; margin: 0 0 0 340px; overflow: hidden;
             .motion { transform: translateY(50%); opacity: 0; transition: 1s; width: 1116px; margin: 0 464px 0 0;}
             .tit {
-                padding-bottom: 80px; transform: translateY(50%); opacity: 0; transition: 1s; margin: 0 auto;
+                padding-bottom: 80px; transform: translateY(50%); opacity: 0; transition: 1s; margin: 0 ;
                 h3 {
                     font-size: 56px; line-height: 1; color: #161616; font-weight: 700;
                     span {color: #06a3ea;}
@@ -91,7 +91,7 @@
                 }
             }
             .box_w {
-                position: relative;
+                position: relative; margin-left: -150px;
                 .box {
                     background: url('../img/index_slider_box.png') left top no-repeat; width: 980px; margin: 0 0 0 69px; height: 1025px; position: relative; z-index: 1;
                     .box_inner {

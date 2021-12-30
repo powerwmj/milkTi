@@ -191,6 +191,10 @@ header.sub .hinner div h1 a {
   font-size: 0;
 }
 
+header.sub .hinner div h1 a img {
+  display: none;
+}
+
 header.sub .hinner div nav {
   vertical-align: middle;
 }
@@ -641,15 +645,15 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
   footer {
     width: 100%;
   }
-  footer .f_menu {
+  footer div .f_menu {
     width: 100%;
     height: 4.5rem;
     border-top: 1px solid #e5e5e5;
   }
-  footer .f_menu .inner {
+  footer div .f_menu .inner {
     padding: 0 5%;
   }
-  footer .f_menu ul {
+  footer div .f_menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -661,23 +665,23 @@ footer .copy_w .inner .cs ul.sns li a.tvcast {
             align-items: center;
     height: 100%;
   }
-  footer .f_menu ul li::after {
+  footer div .f_menu ul li::after {
     content: '·';
     width: 2.5rem;
     text-align: center;
     color: #ccc;
     display: inline-block;
   }
-  footer .f_menu ul li:nth-of-type(5)::after {
+  footer div .f_menu ul li:nth-of-type(5)::after {
     content: '';
     width: 0;
   }
-  footer .f_menu ul li a {
+  footer div .f_menu ul li a {
     font-size: 0.9rem;
     color: #181818;
     line-height: 4.5;
   }
-  footer .f_menu ul li a.bold {
+  footer div .f_menu ul li a.bold {
     font-weight: 700;
   }
   footer .copy_w {

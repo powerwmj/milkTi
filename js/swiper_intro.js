@@ -1,6 +1,6 @@
 
   let swiper2 = new Swiper(".inner .motion", {
-    // loop: true,
+     loop: true,
     // autoplay: {
     //   delay: 2500,
     //   disableOnInteraction: false,
